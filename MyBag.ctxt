@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MyBag()
+comment1.params=bagFile
+comment1.target=MyBag(java.lang.String)
+comment2.params=t
+comment2.target=void\ readFrom(java.lang.String)
+comment3.params=
+comment3.target=java.util.ArrayList\ draw10()
+comment4.params=
+comment4.target=int\ drawOne()
+comment5.params=
+comment5.target=java.util.ArrayList\ emptyBag()
+comment6.params=
+comment6.target=boolean\ checkEmpty()
+comment7.params=whiteBag
+comment7.target=void\ fillBag(java.util.ArrayList)
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9
