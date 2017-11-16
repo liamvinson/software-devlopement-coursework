@@ -17,7 +17,7 @@ public class PebbleGameApp
         public ArrayList<Integer> myHand = new ArrayList<Integer>();
         MyBag lastBag;
         
-        public void run(){
+        public synchronized void run(){
             //Only done one time.
             myHand = drawPebble();
             
@@ -26,25 +26,22 @@ public class PebbleGameApp
                     System.out.println("Yazan is a winner");
                     done = true;
                 } else {
-                    discard();
-                    myHand.add(draw());
-                    if (lastBag.checkEmpty()) {
-                        if (lastBag == X) {
-                            X.myPebbles = A.emptyBag();
-                        } else if (lastBag == Y) {
-                            Y.myPebbles = B.emptyBag();
-                        } else {
-                            Z.myPebbles = C.emptyBag();
-                        }
+                   discard();
+                   myHand.add(draw());
+                   int sum = 0;
+                   for(int i=0; i<10; i++){
+                       sum += myHand.get(i);
                     }
+                   System.out.println(sum);
                 }
                 
-                
-                
-                
-                
+                try{
+                        Thread.sleep(1000);
+                } catch(InterruptedException e){}
+                Thread.yield();
             }
         }
+    
         
         public ArrayList<Integer> drawPebble(){
             MyBag [] bags = {X, Y, Z};
@@ -81,7 +78,7 @@ public class PebbleGameApp
             return bags[select].drawOne();
         }
     }
-    
+   
     static MyBag X;
     static MyBag Y;
     static MyBag Z;
@@ -100,7 +97,13 @@ public class PebbleGameApp
         Y = new MyBag(reader.next());
         Z = new MyBag(reader.next());
         
+        X.setCoBag(A);
+        Y.setCoBag(B);
+        Z.setCoBag(C);
         
+        A.setCoBag(X);
+        B.setCoBag(Y);
+        C.setCoBag(Z);
         
         Player liam = new Player();
         Player yazan = new Player();
