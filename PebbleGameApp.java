@@ -23,7 +23,7 @@ public class PebbleGameApp
             
             while(!done){
                 if (is100() == true){
-                    System.out.println("Yazan is a winner");
+                    System.out.println("winner");
                     done = true;
                 } else {
                    discard();
@@ -34,10 +34,6 @@ public class PebbleGameApp
                     }
                    System.out.println(sum);
                 }
-                
-                try{
-                        Thread.sleep(1000);
-                } catch(InterruptedException e){}
                 Thread.yield();
             }
         }
@@ -49,7 +45,6 @@ public class PebbleGameApp
             int select = random.nextInt(bags.length);
             lastBag = bags[select];
             return bags[select].draw10();
-            
         }
         
         public boolean is100(){
@@ -91,10 +86,25 @@ public class PebbleGameApp
     
     public static void main (String args[]){
         
+        System.out.println("Welcome to the PebbleGame! \n You will be asked to enter the number of players. \n and then for the location of three files in turn containing comma seperated integer values for the pebble weights. \n The integer values must be strictly positive. \n The game will then be simulated, and output written to files in this directory. \n");
+        
         Scanner reader = new Scanner(System.in);
-        System.out.println("Enter the three files: ");
+        
+        System.out.println("Enter the number of players: ");
+        int number = Integer.parseInt(reader.next());
+        Player[] players = new Player[number];
+        
+        for(int i=0 ; i<number ;i++){
+            players[i] = new Player();
+        }
+        
+        System.out.println("Enter File 1: ");
         X = new MyBag(reader.next());
+        
+        System.out.println("Enter File 2: ");
         Y = new MyBag(reader.next());
+        
+        System.out.println("Enter File 3: ");
         Z = new MyBag(reader.next());
         
         X.setCoBag(A);
@@ -105,11 +115,15 @@ public class PebbleGameApp
         B.setCoBag(Y);
         C.setCoBag(Z);
         
-        Player liam = new Player();
-        Player yazan = new Player();
-       
-        liam.start();
-        yazan.start();
+        int check = 11*number;
+        
+        X.checkMin(check);
+        Y.checkMin(check);
+        Z.checkMin(check);
+        
+        for(int i=0 ; i<number ;i++){
+            players[i].start();
+        }
         
         reader.close();   
     }

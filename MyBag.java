@@ -51,7 +51,6 @@ public class MyBag
             int select = random.nextInt(myPebbles.size()-1);
             pebbles10.add(myPebbles.remove(select));
         }
-        System.out.println("you aight fam");
         return pebbles10;
     }
     
@@ -61,7 +60,8 @@ public class MyBag
             myPebbles = corrospondingBag.emptyBag();
         }
         int select = random.nextInt(myPebbles.size());
-        return myPebbles.remove(select);
+        if (select != 0){ select--;}
+            return myPebbles.remove(select);
     }
     
     public ArrayList<Integer> emptyBag() {
@@ -81,6 +81,10 @@ public class MyBag
     public void fillBag(ArrayList<Integer> whiteBag) {
         myPebbles = new ArrayList<Integer>(whiteBag);
     }
+    
+    public boolean checkMin(int check){
+        return (check < myPebbles.size());
+        }
     
     public static void main (String args[]){
         MyBag bagA = new MyBag("pebbles.txt");
