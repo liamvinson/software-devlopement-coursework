@@ -17,27 +17,35 @@ public class MyBag
     ArrayList<Integer> myPebbles = new ArrayList<Integer>();
     
     MyBag corrospondingBag;
+    String bagName;
 
-    public MyBag(){}
+    public MyBag(String bagName){
+        this.bagName = bagName;
+    }
     
-    public MyBag(String bagFile)
+    public MyBag(String bagFile, String bagName) throws IOException
     {
         readFrom(bagFile);
+        this.bagName = bagName;
     }
     
-    public void readFrom(String t) {
-        try{
+    public void readFrom(String t) throws IOException {
         Scanner scanner = new Scanner(new File(t));
+        String line;
+        String[] lineVector;
         
-        while(scanner.hasNextInt())
-        {
-           myPebbles.add(scanner.nextInt());
-           
+        line = scanner.nextLine();
+        
+        lineVector = line.split(",");
+        
+        for (String item : lineVector){
+            int temp = Integer.parseInt(item);
+            if (temp < 1){
+                throw new IOException("Numbers in file must be positive integers");
+            }
+            myPebbles.add(temp);
         }
-        
-        } catch (IOException e) {}
     }
-    
     
     public void setCoBag(MyBag B){
         corrospondingBag = B;
@@ -82,13 +90,9 @@ public class MyBag
         myPebbles = new ArrayList<Integer>(whiteBag);
     }
     
-    public boolean checkMin(int check){
-        return (check < myPebbles.size());
+    public void checkMin(int check) throws IOException{
+        if (check > myPebbles.size()){
+            throw new IOException("Number of pebbles must be 11 times the number of players!");
         }
-    
-    public static void main (String args[]){
-        MyBag bagA = new MyBag("pebbles.txt");
-        MyBag bagX = new MyBag();
-        bagA.draw10().size();
     }
 }
