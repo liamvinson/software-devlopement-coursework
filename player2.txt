@@ -1,0 +1,385 @@
+player2 has discarded a 29 to C
+player2 hand is [49, 24, 96, 56, 23, 18, 55, 36, 80]
+player2 has drawn a 62 from Z
+player2 hand is [49, 24, 96, 56, 23, 18, 55, 36, 80, 62]
+player2 has discarded a 49 to A
+player2 hand is [24, 96, 56, 23, 18, 55, 36, 80, 62]
+player2 has drawn a 98 from X
+player2 hand is [24, 96, 56, 23, 18, 55, 36, 80, 62, 98]
+player2 has discarded a 24 to B
+player2 hand is [96, 56, 23, 18, 55, 36, 80, 62, 98]
+player2 has drawn a 94 from Y
+player2 hand is [96, 56, 23, 18, 55, 36, 80, 62, 98, 94]
+player2 has discarded a 96 to A
+player2 hand is [56, 23, 18, 55, 36, 80, 62, 98, 94]
+player2 has drawn a 58 from X
+player2 hand is [56, 23, 18, 55, 36, 80, 62, 98, 94, 58]
+player2 has discarded a 56 to A
+player2 hand is [23, 18, 55, 36, 80, 62, 98, 94, 58]
+player2 has drawn a 28 from X
+player2 hand is [23, 18, 55, 36, 80, 62, 98, 94, 58, 28]
+player2 has discarded a 23 to B
+player2 hand is [18, 55, 36, 80, 62, 98, 94, 58, 28]
+player2 has drawn a 70 from Y
+player2 hand is [18, 55, 36, 80, 62, 98, 94, 58, 28, 70]
+player2 has discarded a 18 to B
+player2 hand is [55, 36, 80, 62, 98, 94, 58, 28, 70]
+player2 has drawn a 31 from Y
+player2 hand is [55, 36, 80, 62, 98, 94, 58, 28, 70, 31]
+player2 has discarded a 55 to B
+player2 hand is [36, 80, 62, 98, 94, 58, 28, 70, 31]
+player2 has drawn a 86 from Y
+player2 hand is [36, 80, 62, 98, 94, 58, 28, 70, 31, 86]
+player2 has discarded a 36 to C
+player2 hand is [80, 62, 98, 94, 58, 28, 70, 31, 86]
+player2 has drawn a 14 from Z
+player2 hand is [80, 62, 98, 94, 58, 28, 70, 31, 86, 14]
+player2 has discarded a 80 to B
+player2 hand is [62, 98, 94, 58, 28, 70, 31, 86, 14]
+player2 has drawn a 72 from Y
+player2 hand is [62, 98, 94, 58, 28, 70, 31, 86, 14, 72]
+player2 has discarded a 62 to B
+player2 hand is [98, 94, 58, 28, 70, 31, 86, 14, 72]
+player2 has drawn a 38 from Y
+player2 hand is [98, 94, 58, 28, 70, 31, 86, 14, 72, 38]
+player2 has discarded a 98 to A
+player2 hand is [94, 58, 28, 70, 31, 86, 14, 72, 38]
+player2 has drawn a 86 from X
+player2 hand is [94, 58, 28, 70, 31, 86, 14, 72, 38, 86]
+player2 has discarded a 94 to B
+player2 hand is [58, 28, 70, 31, 86, 14, 72, 38, 86]
+player2 has drawn a 87 from Y
+player2 hand is [58, 28, 70, 31, 86, 14, 72, 38, 86, 87]
+player2 has discarded a 58 to A
+player2 hand is [28, 70, 31, 86, 14, 72, 38, 86, 87]
+player2 has drawn a 1 from X
+player2 hand is [28, 70, 31, 86, 14, 72, 38, 86, 87, 1]
+player2 has discarded a 28 to B
+player2 hand is [70, 31, 86, 14, 72, 38, 86, 87, 1]
+player2 has drawn a 8 from Y
+player2 hand is [70, 31, 86, 14, 72, 38, 86, 87, 1, 8]
+player2 has discarded a 70 to B
+player2 hand is [31, 86, 14, 72, 38, 86, 87, 1, 8]
+player2 has drawn a 35 from Y
+player2 hand is [31, 86, 14, 72, 38, 86, 87, 1, 8, 35]
+player2 has discarded a 31 to C
+player2 hand is [86, 14, 72, 38, 86, 87, 1, 8, 35]
+player2 has drawn a 41 from Z
+player2 hand is [86, 14, 72, 38, 86, 87, 1, 8, 35, 41]
+player2 has discarded a 86 to B
+player2 hand is [14, 72, 38, 86, 87, 1, 8, 35, 41]
+player2 has drawn a 29 from Y
+player2 hand is [14, 72, 38, 86, 87, 1, 8, 35, 41, 29]
+player2 has discarded a 14 to C
+player2 hand is [72, 38, 86, 87, 1, 8, 35, 41, 29]
+player2 has drawn a 59 from Z
+player2 hand is [72, 38, 86, 87, 1, 8, 35, 41, 29, 59]
+player2 has discarded a 72 to B
+player2 hand is [38, 86, 87, 1, 8, 35, 41, 29, 59]
+player2 has drawn a 80 from Y
+player2 hand is [38, 86, 87, 1, 8, 35, 41, 29, 59, 80]
+player2 has discarded a 38 to B
+player2 hand is [86, 87, 1, 8, 35, 41, 29, 59, 80]
+player2 has drawn a 36 from Y
+player2 hand is [86, 87, 1, 8, 35, 41, 29, 59, 80, 36]
+player2 has discarded a 86 to C
+player2 hand is [87, 1, 8, 35, 41, 29, 59, 80, 36]
+player2 has drawn a 4 from Z
+player2 hand is [87, 1, 8, 35, 41, 29, 59, 80, 36, 4]
+player2 has discarded a 87 to A
+player2 hand is [1, 8, 35, 41, 29, 59, 80, 36, 4]
+player2 has drawn a 31 from X
+player2 hand is [1, 8, 35, 41, 29, 59, 80, 36, 4, 31]
+player2 has discarded a 1 to B
+player2 hand is [8, 35, 41, 29, 59, 80, 36, 4, 31]
+player2 has drawn a 67 from Y
+player2 hand is [8, 35, 41, 29, 59, 80, 36, 4, 31, 67]
+player2 has discarded a 8 to C
+player2 hand is [35, 41, 29, 59, 80, 36, 4, 31, 67]
+player2 has drawn a 31 from Z
+player2 hand is [35, 41, 29, 59, 80, 36, 4, 31, 67, 31]
+player2 has discarded a 35 to A
+player2 hand is [41, 29, 59, 80, 36, 4, 31, 67, 31]
+player2 has drawn a 84 from X
+player2 hand is [41, 29, 59, 80, 36, 4, 31, 67, 31, 84]
+player2 has discarded a 41 to A
+player2 hand is [29, 59, 80, 36, 4, 31, 67, 31, 84]
+player2 has drawn a 38 from X
+player2 hand is [29, 59, 80, 36, 4, 31, 67, 31, 84, 38]
+player2 has discarded a 29 to A
+player2 hand is [59, 80, 36, 4, 31, 67, 31, 84, 38]
+player2 has drawn a 65 from X
+player2 hand is [59, 80, 36, 4, 31, 67, 31, 84, 38, 65]
+player2 has discarded a 59 to C
+player2 hand is [80, 36, 4, 31, 67, 31, 84, 38, 65]
+player2 has drawn a 48 from Z
+player2 hand is [80, 36, 4, 31, 67, 31, 84, 38, 65, 48]
+player2 has discarded a 80 to A
+player2 hand is [36, 4, 31, 67, 31, 84, 38, 65, 48]
+player2 has drawn a 12 from X
+player2 hand is [36, 4, 31, 67, 31, 84, 38, 65, 48, 12]
+player2 has discarded a 36 to A
+player2 hand is [4, 31, 67, 31, 84, 38, 65, 48, 12]
+player2 has drawn a 2 from X
+player2 hand is [4, 31, 67, 31, 84, 38, 65, 48, 12, 2]
+player2 has discarded a 4 to B
+player2 hand is [31, 67, 31, 84, 38, 65, 48, 12, 2]
+player2 has drawn a 60 from Y
+player2 hand is [31, 67, 31, 84, 38, 65, 48, 12, 2, 60]
+player2 has discarded a 31 to C
+player2 hand is [67, 31, 84, 38, 65, 48, 12, 2, 60]
+player2 has drawn a 89 from Z
+player2 hand is [67, 31, 84, 38, 65, 48, 12, 2, 60, 89]
+player2 has discarded a 67 to C
+player2 hand is [31, 84, 38, 65, 48, 12, 2, 60, 89]
+player2 has drawn a 63 from Z
+player2 hand is [31, 84, 38, 65, 48, 12, 2, 60, 89, 63]
+player2 has discarded a 31 to C
+player2 hand is [84, 38, 65, 48, 12, 2, 60, 89, 63]
+player2 has drawn a 2 from Z
+player2 hand is [84, 38, 65, 48, 12, 2, 60, 89, 63, 2]
+player2 has discarded a 84 to C
+player2 hand is [38, 65, 48, 12, 2, 60, 89, 63, 2]
+player2 has drawn a 9 from Z
+player2 hand is [38, 65, 48, 12, 2, 60, 89, 63, 2, 9]
+player2 has discarded a 38 to C
+player2 hand is [65, 48, 12, 2, 60, 89, 63, 2, 9]
+player2 has drawn a 5 from Z
+player2 hand is [65, 48, 12, 2, 60, 89, 63, 2, 9, 5]
+player2 has discarded a 65 to A
+player2 hand is [48, 12, 2, 60, 89, 63, 2, 9, 5]
+player2 has drawn a 42 from X
+player2 hand is [48, 12, 2, 60, 89, 63, 2, 9, 5, 42]
+player2 has discarded a 48 to A
+player2 hand is [12, 2, 60, 89, 63, 2, 9, 5, 42]
+player2 has drawn a 20 from X
+player2 hand is [12, 2, 60, 89, 63, 2, 9, 5, 42, 20]
+player2 has discarded a 12 to B
+player2 hand is [2, 60, 89, 63, 2, 9, 5, 42, 20]
+player2 has drawn a 3 from Y
+player2 hand is [2, 60, 89, 63, 2, 9, 5, 42, 20, 3]
+player2 has discarded a 2 to B
+player2 hand is [60, 89, 63, 2, 9, 5, 42, 20, 3]
+player2 has drawn a 62 from Y
+player2 hand is [60, 89, 63, 2, 9, 5, 42, 20, 3, 62]
+player2 has discarded a 60 to B
+player2 hand is [89, 63, 2, 9, 5, 42, 20, 3, 62]
+player2 has drawn a 34 from Y
+player2 hand is [89, 63, 2, 9, 5, 42, 20, 3, 62, 34]
+player2 has discarded a 89 to A
+player2 hand is [63, 2, 9, 5, 42, 20, 3, 62, 34]
+player2 has drawn a 53 from X
+player2 hand is [63, 2, 9, 5, 42, 20, 3, 62, 34, 53]
+player2 has discarded a 63 to B
+player2 hand is [2, 9, 5, 42, 20, 3, 62, 34, 53]
+player2 has drawn a 20 from Y
+player2 hand is [2, 9, 5, 42, 20, 3, 62, 34, 53, 20]
+player2 has discarded a 2 to A
+player2 hand is [9, 5, 42, 20, 3, 62, 34, 53, 20]
+player2 has drawn a 47 from X
+player2 hand is [9, 5, 42, 20, 3, 62, 34, 53, 20, 47]
+player2 has discarded a 9 to C
+player2 hand is [5, 42, 20, 3, 62, 34, 53, 20, 47]
+player2 has drawn a 55 from Z
+player2 hand is [5, 42, 20, 3, 62, 34, 53, 20, 47, 55]
+player2 has discarded a 5 to B
+player2 hand is [42, 20, 3, 62, 34, 53, 20, 47, 55]
+player2 has drawn a 100 from Y
+player2 hand is [42, 20, 3, 62, 34, 53, 20, 47, 55, 100]
+player2 has discarded a 42 to B
+player2 hand is [20, 3, 62, 34, 53, 20, 47, 55, 100]
+player2 has drawn a 24 from Y
+player2 hand is [20, 3, 62, 34, 53, 20, 47, 55, 100, 24]
+player2 has discarded a 20 to A
+player2 hand is [3, 62, 34, 53, 20, 47, 55, 100, 24]
+player2 has drawn a 19 from X
+player2 hand is [3, 62, 34, 53, 20, 47, 55, 100, 24, 19]
+player2 has discarded a 3 to A
+player2 hand is [62, 34, 53, 20, 47, 55, 100, 24, 19]
+player2 has drawn a 63 from X
+player2 hand is [62, 34, 53, 20, 47, 55, 100, 24, 19, 63]
+player2 has discarded a 62 to A
+player2 hand is [34, 53, 20, 47, 55, 100, 24, 19, 63]
+player2 has drawn a 32 from X
+player2 hand is [34, 53, 20, 47, 55, 100, 24, 19, 63, 32]
+player2 has discarded a 34 to B
+player2 hand is [53, 20, 47, 55, 100, 24, 19, 63, 32]
+player2 has drawn a 84 from Y
+player2 hand is [53, 20, 47, 55, 100, 24, 19, 63, 32, 84]
+player2 has discarded a 53 to A
+player2 hand is [20, 47, 55, 100, 24, 19, 63, 32, 84]
+player2 has drawn a 88 from X
+player2 hand is [20, 47, 55, 100, 24, 19, 63, 32, 84, 88]
+player2 has discarded a 20 to B
+player2 hand is [47, 55, 100, 24, 19, 63, 32, 84, 88]
+player2 has drawn a 41 from Y
+player2 hand is [47, 55, 100, 24, 19, 63, 32, 84, 88, 41]
+player2 has discarded a 47 to A
+player2 hand is [55, 100, 24, 19, 63, 32, 84, 88, 41]
+player2 has drawn a 17 from X
+player2 hand is [55, 100, 24, 19, 63, 32, 84, 88, 41, 17]
+player2 has discarded a 55 to B
+player2 hand is [100, 24, 19, 63, 32, 84, 88, 41, 17]
+player2 has drawn a 12 from Y
+player2 hand is [100, 24, 19, 63, 32, 84, 88, 41, 17, 12]
+player2 has discarded a 100 to B
+player2 hand is [24, 19, 63, 32, 84, 88, 41, 17, 12]
+player2 has drawn a 61 from Y
+player2 hand is [24, 19, 63, 32, 84, 88, 41, 17, 12, 61]
+player2 has discarded a 24 to B
+player2 hand is [19, 63, 32, 84, 88, 41, 17, 12, 61]
+player2 has drawn a 47 from Y
+player2 hand is [19, 63, 32, 84, 88, 41, 17, 12, 61, 47]
+player2 has discarded a 19 to C
+player2 hand is [63, 32, 84, 88, 41, 17, 12, 61, 47]
+player2 has drawn a 94 from Z
+player2 hand is [63, 32, 84, 88, 41, 17, 12, 61, 47, 94]
+player2 has discarded a 63 to B
+player2 hand is [32, 84, 88, 41, 17, 12, 61, 47, 94]
+player2 has drawn a 28 from Y
+player2 hand is [32, 84, 88, 41, 17, 12, 61, 47, 94, 28]
+player2 has discarded a 32 to A
+player2 hand is [84, 88, 41, 17, 12, 61, 47, 94, 28]
+player2 has drawn a 85 from X
+player2 hand is [84, 88, 41, 17, 12, 61, 47, 94, 28, 85]
+player2 has discarded a 84 to C
+player2 hand is [88, 41, 17, 12, 61, 47, 94, 28, 85]
+player2 has drawn a 46 from Z
+player2 hand is [88, 41, 17, 12, 61, 47, 94, 28, 85, 46]
+player2 has discarded a 88 to C
+player2 hand is [41, 17, 12, 61, 47, 94, 28, 85, 46]
+player2 has drawn a 49 from Z
+player2 hand is [41, 17, 12, 61, 47, 94, 28, 85, 46, 49]
+player2 has discarded a 41 to B
+player2 hand is [17, 12, 61, 47, 94, 28, 85, 46, 49]
+player2 has drawn a 57 from Y
+player2 hand is [17, 12, 61, 47, 94, 28, 85, 46, 49, 57]
+player2 has discarded a 17 to A
+player2 hand is [12, 61, 47, 94, 28, 85, 46, 49, 57]
+player2 has drawn a 97 from X
+player2 hand is [12, 61, 47, 94, 28, 85, 46, 49, 57, 97]
+player2 has discarded a 12 to A
+player2 hand is [61, 47, 94, 28, 85, 46, 49, 57, 97]
+player2 has drawn a 11 from X
+player2 hand is [61, 47, 94, 28, 85, 46, 49, 57, 97, 11]
+player2 has discarded a 61 to B
+player2 hand is [47, 94, 28, 85, 46, 49, 57, 97, 11]
+player2 has drawn a 21 from Y
+player2 hand is [47, 94, 28, 85, 46, 49, 57, 97, 11, 21]
+player2 has discarded a 47 to C
+player2 hand is [94, 28, 85, 46, 49, 57, 97, 11, 21]
+player2 has drawn a 50 from Z
+player2 hand is [94, 28, 85, 46, 49, 57, 97, 11, 21, 50]
+player2 has discarded a 94 to B
+player2 hand is [28, 85, 46, 49, 57, 97, 11, 21, 50]
+player2 has drawn a 53 from Y
+player2 hand is [28, 85, 46, 49, 57, 97, 11, 21, 50, 53]
+player2 has discarded a 28 to C
+player2 hand is [85, 46, 49, 57, 97, 11, 21, 50, 53]
+player2 has drawn a 70 from Z
+player2 hand is [85, 46, 49, 57, 97, 11, 21, 50, 53, 70]
+player2 has discarded a 85 to C
+player2 hand is [46, 49, 57, 97, 11, 21, 50, 53, 70]
+player2 has drawn a 34 from Z
+player2 hand is [46, 49, 57, 97, 11, 21, 50, 53, 70, 34]
+player2 has discarded a 46 to B
+player2 hand is [49, 57, 97, 11, 21, 50, 53, 70, 34]
+player2 has drawn a 63 from Y
+player2 hand is [49, 57, 97, 11, 21, 50, 53, 70, 34, 63]
+player2 has discarded a 49 to A
+player2 hand is [57, 97, 11, 21, 50, 53, 70, 34, 63]
+player2 has drawn a 44 from X
+player2 hand is [57, 97, 11, 21, 50, 53, 70, 34, 63, 44]
+player2 has discarded a 57 to C
+player2 hand is [97, 11, 21, 50, 53, 70, 34, 63, 44]
+player2 has drawn a 32 from Z
+player2 hand is [97, 11, 21, 50, 53, 70, 34, 63, 44, 32]
+player2 has discarded a 97 to B
+player2 hand is [11, 21, 50, 53, 70, 34, 63, 44, 32]
+player2 has drawn a 52 from Y
+player2 hand is [11, 21, 50, 53, 70, 34, 63, 44, 32, 52]
+player2 has discarded a 11 to C
+player2 hand is [21, 50, 53, 70, 34, 63, 44, 32, 52]
+player2 has drawn a 15 from Z
+player2 hand is [21, 50, 53, 70, 34, 63, 44, 32, 52, 15]
+player2 has discarded a 21 to C
+player2 hand is [50, 53, 70, 34, 63, 44, 32, 52, 15]
+player2 has drawn a 71 from Z
+player2 hand is [50, 53, 70, 34, 63, 44, 32, 52, 15, 71]
+player2 has discarded a 50 to C
+player2 hand is [53, 70, 34, 63, 44, 32, 52, 15, 71]
+player2 has drawn a 51 from Z
+player2 hand is [53, 70, 34, 63, 44, 32, 52, 15, 71, 51]
+player2 has discarded a 53 to A
+player2 hand is [70, 34, 63, 44, 32, 52, 15, 71, 51]
+player2 has drawn a 69 from X
+player2 hand is [70, 34, 63, 44, 32, 52, 15, 71, 51, 69]
+player2 has discarded a 70 to C
+player2 hand is [34, 63, 44, 32, 52, 15, 71, 51, 69]
+player2 has drawn a 74 from Z
+player2 hand is [34, 63, 44, 32, 52, 15, 71, 51, 69, 74]
+player2 has discarded a 34 to C
+player2 hand is [63, 44, 32, 52, 15, 71, 51, 69, 74]
+player2 has drawn a 6 from Z
+player2 hand is [63, 44, 32, 52, 15, 71, 51, 69, 74, 6]
+player2 has discarded a 63 to B
+player2 hand is [44, 32, 52, 15, 71, 51, 69, 74, 6]
+player2 has drawn a 100 from Y
+player2 hand is [44, 32, 52, 15, 71, 51, 69, 74, 6, 100]
+player2 has discarded a 44 to C
+player2 hand is [32, 52, 15, 71, 51, 69, 74, 6, 100]
+player2 has drawn a 75 from Z
+player2 hand is [32, 52, 15, 71, 51, 69, 74, 6, 100, 75]
+player2 has discarded a 32 to C
+player2 hand is [52, 15, 71, 51, 69, 74, 6, 100, 75]
+player2 has drawn a 35 from Z
+player2 hand is [52, 15, 71, 51, 69, 74, 6, 100, 75, 35]
+player2 has discarded a 52 to C
+player2 hand is [15, 71, 51, 69, 74, 6, 100, 75, 35]
+player2 has drawn a 85 from Z
+player2 hand is [15, 71, 51, 69, 74, 6, 100, 75, 35, 85]
+player2 has discarded a 15 to B
+player2 hand is [71, 51, 69, 74, 6, 100, 75, 35, 85]
+player2 has drawn a 70 from Y
+player2 hand is [71, 51, 69, 74, 6, 100, 75, 35, 85, 70]
+player2 has discarded a 71 to C
+player2 hand is [51, 69, 74, 6, 100, 75, 35, 85, 70]
+player2 has drawn a 10 from Z
+player2 hand is [51, 69, 74, 6, 100, 75, 35, 85, 70, 10]
+player2 has discarded a 51 to B
+player2 hand is [69, 74, 6, 100, 75, 35, 85, 70, 10]
+player2 has drawn a 96 from Y
+player2 hand is [69, 74, 6, 100, 75, 35, 85, 70, 10, 96]
+player2 has discarded a 69 to B
+player2 hand is [74, 6, 100, 75, 35, 85, 70, 10, 96]
+player2 has drawn a 74 from Y
+player2 hand is [74, 6, 100, 75, 35, 85, 70, 10, 96, 74]
+player2 has discarded a 74 to C
+player2 hand is [6, 100, 75, 35, 85, 70, 10, 96, 74]
+player2 has drawn a 11 from Z
+player2 hand is [6, 100, 75, 35, 85, 70, 10, 96, 74, 11]
+player2 has discarded a 6 to B
+player2 hand is [100, 75, 35, 85, 70, 10, 96, 74, 11]
+player2 has drawn a 19 from Y
+player2 hand is [100, 75, 35, 85, 70, 10, 96, 74, 11, 19]
+player2 has discarded a 100 to C
+player2 hand is [75, 35, 85, 70, 10, 96, 74, 11, 19]
+player2 has drawn a 16 from Z
+player2 hand is [75, 35, 85, 70, 10, 96, 74, 11, 19, 16]
+player2 has discarded a 75 to C
+player2 hand is [35, 85, 70, 10, 96, 74, 11, 19, 16]
+player2 has drawn a 65 from Z
+player2 hand is [35, 85, 70, 10, 96, 74, 11, 19, 16, 65]
+player2 has discarded a 35 to B
+player2 hand is [85, 70, 10, 96, 74, 11, 19, 16, 65]
+player2 has drawn a 2 from Y
+player2 hand is [85, 70, 10, 96, 74, 11, 19, 16, 65, 2]
+player2 has discarded a 85 to A
+player2 hand is [70, 10, 96, 74, 11, 19, 16, 65, 2]
+player2 has drawn a 100 from X
+player2 hand is [70, 10, 96, 74, 11, 19, 16, 65, 2, 100]
+player2 has discarded a 70 to B
+player2 hand is [10, 96, 74, 11, 19, 16, 65, 2, 100]
+player2 has drawn a 6 from Y
+player2 hand is [10, 96, 74, 11, 19, 16, 65, 2, 100, 6]
+player2 has discarded a
