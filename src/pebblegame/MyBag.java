@@ -85,14 +85,6 @@ public class MyBag
         myPebbles.clear();
         return copy;
     }
-
-    public boolean checkEmpty() {
-        if (myPebbles.isEmpty()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
     
     public void checkMin(int check) throws IOException{
         if (check > myPebbles.size()){

@@ -7,13 +7,11 @@ package pebblegame;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.io.PrintWriter;
 
-public class PebbleGameApp
-{
+public class PebbleGameApp {
     static class Player extends Thread{
         public ArrayList<Integer> myHand = new ArrayList<Integer>();
         MyBag lastBag;
@@ -22,6 +20,7 @@ public class PebbleGameApp
             this.playerName = playerName;
         }
 
+        @Override
         public synchronized void run(){
             //Only done one time.
             myHand = drawPebble();
@@ -89,19 +88,16 @@ public class PebbleGameApp
     static MyBag A = new MyBag("A");
     static MyBag B = new MyBag("B");
     static MyBag C = new MyBag("C");
-
-    public static void main (String args[]){
-
+    
+    public static void doWork(Scanner input) {
         System.out.println("Welcome to the PebbleGame! \n You will be asked to enter the number of players. \n and then for the location of three files in turn containing comma seperated integer values for the pebble weights. \n The integer values must be strictly positive. \n The game will then be simulated, and output written to files in this directory. \n");
-
-        Scanner reader = new Scanner(System.in);
 
         int number=0;
         boolean playerCheck=false;
 
         while (!playerCheck){
             System.out.println("Enter the number of players: ");
-            number = Integer.parseInt(reader.next());
+            number = Integer.parseInt(input.next());
             if (number >=1){
                 playerCheck = true;
             } else {
@@ -120,15 +116,15 @@ public class PebbleGameApp
         while (!fileCheck){
             try{
                 System.out.println("Enter File 1: ");
-                X = new MyBag(reader.next(), "X");
+                X = new MyBag(input.next(), "X");
                 X.checkMin(check);
 
                 System.out.println("Enter File 2: ");
-                Y = new MyBag(reader.next(), "Y");
+                Y = new MyBag(input.next(), "Y");
                 Y.checkMin(check);
 
                 System.out.println("Enter File 3: ");
-                Z = new MyBag(reader.next(), "Z");
+                Z = new MyBag(input.next(), "Z");
                 Z.checkMin(check);
 
                 fileCheck = true;
@@ -148,6 +144,10 @@ public class PebbleGameApp
             players[i].start();
         }
 
-        reader.close();
+        input.close();
+    }
+
+    public static void main (String args[]){
+        doWork(new Scanner(System.in));
     }
 }

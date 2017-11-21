@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>MyBag.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;PebbleGame&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">pebblegame</a> &gt; <span class="el_source">MyBag.java</span></div><h1>MyBag.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pebblegame;
+
+/**
+ * Write a description of class MyBag here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+
+import java.util.Random;
+import java.util.Scanner;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+
+public class MyBag
+{
+    // instance variables - replace the example below with your own
+<span class="fc" id="L24">    ArrayList&lt;Integer&gt; myPebbles = new ArrayList&lt;Integer&gt;();</span>
+
+    MyBag corrospondingBag;
+    String bagName;
+
+<span class="fc" id="L29">    public MyBag(String bagName){</span>
+<span class="fc" id="L30">        this.bagName = bagName;</span>
+<span class="fc" id="L31">    }</span>
+
+    public MyBag(String bagFile, String bagName) throws IOException
+<span class="fc" id="L34">    {</span>
+<span class="fc" id="L35">        readFrom(bagFile);</span>
+<span class="fc" id="L36">        this.bagName = bagName;</span>
+<span class="fc" id="L37">    }</span>
+
+    public void readFrom(String t) throws IOException {
+<span class="fc" id="L40">        InputStream in = getClass().getResourceAsStream(t);</span>
+<span class="fc" id="L41">        Scanner scanner = new Scanner(in);</span>
+        String line;
+        String[] lineVector;
+
+<span class="fc" id="L45">        line = scanner.nextLine();</span>
+
+<span class="fc" id="L47">        lineVector = line.split(&quot;,&quot;);</span>
+
+<span class="fc bfc" id="L49" title="All 2 branches covered.">        for (String item : lineVector){</span>
+<span class="fc" id="L50">            int temp = Integer.parseInt(item);</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">            if (temp &lt; 1){</span>
+<span class="fc" id="L52">                throw new IOException(&quot;Numbers in file must be positive integers&quot;);</span>
+            }
+<span class="fc" id="L54">            myPebbles.add(temp);</span>
+        }
+<span class="fc" id="L56">    }</span>
+
+    public void setCoBag(MyBag bag){
+<span class="fc" id="L59">        corrospondingBag = bag;</span>
+<span class="fc" id="L60">    }</span>
+
+    public ArrayList&lt;Integer&gt; draw10(){
+<span class="fc" id="L63">        ArrayList&lt;Integer&gt; pebbles10 = new ArrayList&lt;Integer&gt;();</span>
+
+<span class="fc bfc" id="L65" title="All 2 branches covered.">        for(int i=0; i&lt;10; i++){</span>
+<span class="fc" id="L66">            Random random = new Random();</span>
+<span class="fc" id="L67">            int select = random.nextInt(myPebbles.size()-1);</span>
+<span class="fc" id="L68">            pebbles10.add(myPebbles.remove(select));</span>
+        }
+<span class="fc" id="L70">        return pebbles10;</span>
+    }
+
+    public int drawOne(){
+<span class="fc" id="L74">        Random random = new Random();</span>
+<span class="pc bpc" id="L75" title="1 of 2 branches missed.">        if (myPebbles.isEmpty()){</span>
+<span class="nc" id="L76">            myPebbles = corrospondingBag.emptyBag();</span>
+        }
+<span class="fc" id="L78">        int select = random.nextInt(myPebbles.size());</span>
+<span class="fc bfc" id="L79" title="All 2 branches covered.">        if (select != 0){ select--;}</span>
+<span class="fc" id="L80">        return myPebbles.remove(select);</span>
+    }
+
+    public ArrayList&lt;Integer&gt; emptyBag() {
+<span class="fc" id="L84">        ArrayList&lt;Integer&gt; copy = new ArrayList&lt;Integer&gt;(myPebbles);</span>
+<span class="fc" id="L85">        myPebbles.clear();</span>
+<span class="fc" id="L86">        return copy;</span>
+    }
+    
+    public void checkMin(int check) throws IOException{
+<span class="fc bfc" id="L90" title="All 2 branches covered.">        if (check &gt; myPebbles.size()){</span>
+<span class="fc" id="L91">            throw new IOException(&quot;Number of pebbles must be 11 times the number of players!&quot;);</span>
+        }
+<span class="fc" id="L93">    }</span>
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>

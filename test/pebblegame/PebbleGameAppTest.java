@@ -5,6 +5,7 @@
  */
 package pebblegame;
 
+import java.util.Scanner;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -28,13 +29,21 @@ public class PebbleGameAppTest {
     }
 
     /**
-     * Test of main method, of class PebbleGameApp.
+     * Test of doWork method, of class PebbleGameApp.
      */
     @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        PebbleGameApp.main(args);
+    public void testDoWork() {
+        System.out.println("doWork");
+        String s = "2 testGame.txt testGame.txt testGame.txt";
+        Scanner input = new Scanner(s);
+        PebbleGameApp.doWork(input);
+        
+        String s2 = "-1 1 testGame.txt testGame.txt testGame.txt";
+        Scanner input2 = new Scanner(s2);
+        PebbleGameApp.doWork(input2);
+        
+        String s3 = "3 testPebbles.txt testGame.txt testGame.txt testGame.txt";
+        Scanner input3 = new Scanner(s3);
+        PebbleGameApp.doWork(input3);
     }
-    
 }

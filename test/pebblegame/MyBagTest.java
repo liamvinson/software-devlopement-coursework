@@ -109,20 +109,6 @@ public class MyBagTest {
     }
 
     /**
-     * Test of checkEmpty method, of class MyBag.
-     */
-    @Test
-    public void testCheckEmpty() {
-        System.out.println("checkEmpty");
-        
-        boolean result = white.checkEmpty();
-        boolean result2 = black.checkEmpty();
-        
-        assertEquals(true, result);
-        assertEquals(false, result2);
-    }
-
-    /**
      * Test of checkMin method, of class MyBag.
      */
     @Test(expected = IOException.class)
