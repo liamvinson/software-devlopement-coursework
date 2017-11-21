@@ -1,0 +1,80 @@
+player1 has discarded a 9 to C
+player1 hand is [18, 2, 3, 3, 5, 11, 15, 18, 12]
+player1 has drawn a 14 from Z
+player1 hand is [18, 2, 3, 3, 5, 11, 15, 18, 12, 14]
+player1 has discarded a 18 to A
+player1 hand is [2, 3, 3, 5, 11, 15, 18, 12, 14]
+player1 has drawn a 13 from X
+player1 hand is [2, 3, 3, 5, 11, 15, 18, 12, 14, 13]
+player1 has discarded a 2 to A
+player1 hand is [3, 3, 5, 11, 15, 18, 12, 14, 13]
+player1 has drawn a 2 from X
+player1 hand is [3, 3, 5, 11, 15, 18, 12, 14, 13, 2]
+player1 has discarded a 3 to C
+player1 hand is [3, 5, 11, 15, 18, 12, 14, 13, 2]
+player1 has drawn a 8 from Z
+player1 hand is [3, 5, 11, 15, 18, 12, 14, 13, 2, 8]
+player1 has discarded a 3 to C
+player1 hand is [5, 11, 15, 18, 12, 14, 13, 2, 8]
+player1 has drawn a 16 from Z
+player1 hand is [5, 11, 15, 18, 12, 14, 13, 2, 8, 16]
+player1 has discarded a 5 to B
+player1 hand is [11, 15, 18, 12, 14, 13, 2, 8, 16]
+player1 has drawn a 15 from Y
+player1 hand is [11, 15, 18, 12, 14, 13, 2, 8, 16, 15]
+player1 has discarded a 11 to C
+player1 hand is [15, 18, 12, 14, 13, 2, 8, 16, 15]
+player1 has drawn a 4 from Z
+player1 hand is [15, 18, 12, 14, 13, 2, 8, 16, 15, 4]
+player1 has discarded a 15 to C
+player1 hand is [18, 12, 14, 13, 2, 8, 16, 15, 4]
+player1 has drawn a 17 from Z
+player1 hand is [18, 12, 14, 13, 2, 8, 16, 15, 4, 17]
+player1 has discarded a 18 to C
+player1 hand is [12, 14, 13, 2, 8, 16, 15, 4, 17]
+player1 has drawn a 18 from Z
+player1 hand is [12, 14, 13, 2, 8, 16, 15, 4, 17, 18]
+player1 has discarded a 12 to A
+player1 hand is [14, 13, 2, 8, 16, 15, 4, 17, 18]
+player1 has drawn a 8 from X
+player1 hand is [14, 13, 2, 8, 16, 15, 4, 17, 18, 8]
+player1 has discarded a 14 to B
+player1 hand is [13, 2, 8, 16, 15, 4, 17, 18, 8]
+player1 has drawn a 14 from Y
+player1 hand is [13, 2, 8, 16, 15, 4, 17, 18, 8, 14]
+player1 has discarded a 13 to B
+player1 hand is [2, 8, 16, 15, 4, 17, 18, 8, 14]
+player1 has drawn a 8 from Y
+player1 hand is [2, 8, 16, 15, 4, 17, 18, 8, 14, 8]
+player1 has discarded a 2 to C
+player1 hand is [8, 16, 15, 4, 17, 18, 8, 14, 8]
+player1 has drawn a 16 from Z
+player1 hand is [8, 16, 15, 4, 17, 18, 8, 14, 8, 16]
+player1 has discarded a 8 to A
+player1 hand is [16, 15, 4, 17, 18, 8, 14, 8, 16]
+player1 has drawn a 9 from X
+player1 hand is [16, 15, 4, 17, 18, 8, 14, 8, 16, 9]
+player1 has discarded a 16 to B
+player1 hand is [15, 4, 17, 18, 8, 14, 8, 16, 9]
+player1 has drawn a 10 from Y
+player1 hand is [15, 4, 17, 18, 8, 14, 8, 16, 9, 10]
+player1 has discarded a 15 to C
+player1 hand is [4, 17, 18, 8, 14, 8, 16, 9, 10]
+player1 has drawn a 1 from Z
+player1 hand is [4, 17, 18, 8, 14, 8, 16, 9, 10, 1]
+player1 has discarded a 4 to A
+player1 hand is [17, 18, 8, 14, 8, 16, 9, 10, 1]
+player1 has drawn a 1 from X
+player1 hand is [17, 18, 8, 14, 8, 16, 9, 10, 1, 1]
+player1 has discarded a 17 to A
+player1 hand is [18, 8, 14, 8, 16, 9, 10, 1, 1]
+player1 has drawn a 6 from X
+player1 hand is [18, 8, 14, 8, 16, 9, 10, 1, 1, 6]
+player1 has discarded a 18 to C
+player1 hand is [8, 14, 8, 16, 9, 10, 1, 1, 6]
+player1 has drawn a 19 from Z
+player1 hand is [8, 14, 8, 16, 9, 10, 1, 1, 6, 19]
+player1 has discarded a 8 to B
+player1 hand is [14, 8, 16, 9, 10, 1, 1, 6, 19]
+player1 has drawn a 16 from Y
+player1 hand is [14, 8, 16, 9, 10, 1, 1, 6, 19, 16]

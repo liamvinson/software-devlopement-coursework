@@ -1,81 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>PebbleGameApp.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">JaCoCoverage analysis of project &quot;PebbleGame&quot; (powered by JaCoCo from EclEmma)</a> &gt; <a href="index.source.html" class="el_package">pebblegame</a> &gt; <span class="el_source">PebbleGameApp.java</span></div><h1>PebbleGameApp.java</h1><pre class="source lang-java linenums">package pebblegame;
 
-/**
- *
- * @author liamvinson
- */
-
 import java.util.Random;
 import java.util.Scanner;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.io.PrintWriter;
 
-<span class="nc" id="L14">public class PebbleGameApp {</span>
+<span class="nc" id="L9">public class PebbleGameApp {</span>
     static class Player extends Thread{
-<span class="fc" id="L16">        public ArrayList&lt;Integer&gt; myHand = new ArrayList&lt;Integer&gt;();</span>
-        MyBag lastBag;
+<span class="fc" id="L11">        public ArrayList&lt;Integer&gt; myHand = new ArrayList&lt;&gt;();</span>
+        MyBag lastBag; //Is where last pebble was taken from.
         String playerName;
-<span class="fc" id="L19">        public Player(String playerName){</span>
-<span class="fc" id="L20">            this.playerName = playerName;</span>
-<span class="fc" id="L21">        }</span>
+        
+<span class="fc" id="L15">        public Player(String playerName){</span>
+<span class="fc" id="L16">            this.playerName = playerName;</span>
+<span class="fc" id="L17">        }</span>
 
         @Override
         public synchronized void run(){
             //Only done one time.
-<span class="fc" id="L26">            myHand = drawPebble();</span>
+<span class="fc" id="L22">            myHand = drawPebble();</span>
             try{
-<span class="fc" id="L28">                PrintWriter writer = new PrintWriter(playerName + &quot;.txt&quot;, &quot;UTF-8&quot;);</span>
+<span class="fc" id="L24">                PrintWriter writer = new PrintWriter(playerName + &quot;.txt&quot;, &quot;UTF-8&quot;); // Creates a new file to write log to.</span>
 
-<span class="fc bfc" id="L30" title="All 2 branches covered.">                while(!done){</span>
-<span class="fc bfc" id="L31" title="All 2 branches covered.">                    if (is100() == true){</span>
-<span class="fc" id="L32">                        System.out.println(playerName + &quot; Wins&quot;);</span>
-<span class="fc" id="L33">                        done = true;</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">                while(!done){</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">                    if (is100() == true){</span>
+<span class="fc" id="L28">                        System.out.println(playerName + &quot; Wins&quot;);</span>
+<span class="fc" id="L29">                        done = true; // Used to stop all threads.</span>
                     } else {
-<span class="fc" id="L35">                        int peb = discard();</span>
-<span class="fc" id="L36">                        int pebD = draw();</span>
+<span class="fc" id="L31">                        int peb = discard();//Removes one pebble from hand.</span>
+<span class="fc" id="L32">                        int pebD = draw(); // Gets new pebble from random bag.</span>
 
-<span class="fc" id="L38">                        writer.println(playerName + &quot; has discarded a &quot; + peb + &quot; to &quot; + lastBag.corrospondingBag.bagName); </span>
-<span class="fc" id="L39">                        writer.println(playerName + &quot; hand is &quot; + myHand);</span>
+<span class="fc" id="L34">                        writer.println(playerName + &quot; has discarded a &quot; + peb + &quot; to &quot; + lastBag.corrospondingBag.bagName); </span>
+<span class="fc" id="L35">                        writer.println(playerName + &quot; hand is &quot; + myHand);</span>
+                        
+<span class="fc" id="L37">                        myHand.add(pebD); // Add pebble to myHand</span>
 
-<span class="fc" id="L41">                        myHand.add(pebD);</span>
-<span class="fc" id="L42">                        writer.println(playerName + &quot; has drawn a &quot; + pebD + &quot; from &quot; + lastBag.bagName); </span>
-<span class="fc" id="L43">                        writer.println(playerName + &quot; hand is &quot; + myHand);</span>
+<span class="fc" id="L39">                        writer.println(playerName + &quot; has drawn a &quot; + pebD + &quot; from &quot; + lastBag.bagName); </span>
+<span class="fc" id="L40">                        writer.println(playerName + &quot; hand is &quot; + myHand);</span>
                     }
-<span class="fc" id="L45">                    Thread.yield();</span>
+<span class="fc" id="L42">                    Thread.yield();</span>
                 }
-<span class="fc" id="L47">                writer.close();</span>
-<span class="pc" id="L48">            } catch(IOException e){}</span>
-<span class="fc" id="L49">        }</span>
+<span class="fc" id="L44">                writer.close();</span>
+<span class="pc" id="L45">            } catch(IOException e){}</span>
+<span class="fc" id="L46">        }</span>
 
+        // Returns an arraylist which contains 10 pebbles to be assigned to a players hand. The bag they are taken from is selected at random.
         public ArrayList&lt;Integer&gt; drawPebble(){
-<span class="fc" id="L52">            MyBag [] bags = {X, Y, Z};</span>
-<span class="fc" id="L53">            Random random = new Random();</span>
-<span class="fc" id="L54">            int select = random.nextInt(bags.length);</span>
-<span class="fc" id="L55">            lastBag = bags[select];</span>
-<span class="fc" id="L56">            return bags[select].draw10();</span>
+<span class="fc" id="L50">            MyBag [] bags = {X, Y, Z};</span>
+<span class="fc" id="L51">            Random random = new Random();</span>
+<span class="fc" id="L52">            int select = random.nextInt(bags.length);</span>
+<span class="fc" id="L53">            lastBag = bags[select];</span>
+<span class="fc" id="L54">            return bags[select].draw10();</span>
         }
 
+        // Returns boolean that is true if the sum of a players myhand is equal to 100.
         public boolean is100(){
-<span class="fc" id="L60">            int sum = 0;</span>
-<span class="fc bfc" id="L61" title="All 2 branches covered.">            for(int i=0; i&lt;10; i++){</span>
-<span class="fc" id="L62">                sum += myHand.get(i);</span>
+<span class="fc" id="L59">            int sum = 0;</span>
+<span class="fc bfc" id="L60" title="All 2 branches covered.">            for(int i=0; i&lt;10; i++){</span>
+<span class="fc" id="L61">                sum += myHand.get(i);</span>
             }
-<span class="fc bfc" id="L64" title="All 2 branches covered.">            return sum == 100;</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">            return sum == 100;</span>
         }
 
+        // Returns an int which is the pebble being removed fromt the myHand arraylist.
         public int discard(){
 <span class="fc" id="L68">            int peb = myHand.remove(0);</span>
 <span class="fc" id="L69">            lastBag.corrospondingBag.myPebbles.add(peb);</span>
 <span class="fc" id="L70">            return peb;</span>
         }
 
+        // Returns an int that is one pebble selected at random, from a bag that is also selected at random.
         public int draw() {
-<span class="fc" id="L74">            MyBag [] bags = {X, Y, Z};</span>
-<span class="fc" id="L75">            Random random = new Random();</span>
-<span class="fc" id="L76">            int select = random.nextInt(bags.length);</span>
-<span class="fc" id="L77">            lastBag = bags[select];</span>
-<span class="fc" id="L78">            return bags[select].drawOne();</span>
+<span class="fc" id="L75">            MyBag [] bags = {X, Y, Z};</span>
+<span class="fc" id="L76">            Random random = new Random();</span>
+<span class="fc" id="L77">            int select = random.nextInt(bags.length);</span>
+<span class="fc" id="L78">            lastBag = bags[select];</span>
+<span class="fc" id="L79">            return bags[select].drawOne();</span>
         }
     }
 
@@ -83,72 +84,79 @@ import java.io.PrintWriter;
     static MyBag Y;
     static MyBag Z;
 
-<span class="fc" id="L86">    static boolean done = false;</span>
+<span class="fc" id="L87">    static boolean done = false;</span>
 
-<span class="fc" id="L88">    static MyBag A = new MyBag(&quot;A&quot;);</span>
-<span class="fc" id="L89">    static MyBag B = new MyBag(&quot;B&quot;);</span>
-<span class="fc" id="L90">    static MyBag C = new MyBag(&quot;C&quot;);</span>
+<span class="fc" id="L89">    static MyBag A = new MyBag(&quot;A&quot;);</span>
+<span class="fc" id="L90">    static MyBag B = new MyBag(&quot;B&quot;);</span>
+<span class="fc" id="L91">    static MyBag C = new MyBag(&quot;C&quot;);</span>
     
     public static void doWork(Scanner input) {
-<span class="fc" id="L93">        System.out.println(&quot;Welcome to the PebbleGame! \n You will be asked to enter the number of players. \n and then for the location of three files in turn containing comma seperated integer values for the pebble weights. \n The integer values must be strictly positive. \n The game will then be simulated, and output written to files in this directory. \n&quot;);</span>
+<span class="fc" id="L94">        System.out.println(&quot;Welcome to the PebbleGame! \n You will be asked to enter the number of players. \n and then for the location of three files in turn containing comma seperated integer values for the pebble weights. \n The integer values must be strictly positive. \n The game will then be simulated, and output written to files in this directory. \n&quot;);</span>
 
-<span class="fc" id="L95">        int number=0;</span>
-<span class="fc" id="L96">        boolean playerCheck=false;</span>
+<span class="fc" id="L96">        int number=0;</span>
+<span class="fc" id="L97">        boolean playerCheck=false;</span>
 
-<span class="fc bfc" id="L98" title="All 2 branches covered.">        while (!playerCheck){</span>
-<span class="fc" id="L99">            System.out.println(&quot;Enter the number of players: &quot;);</span>
-<span class="fc" id="L100">            number = Integer.parseInt(input.next());</span>
-<span class="fc bfc" id="L101" title="All 2 branches covered.">            if (number &gt;=1){</span>
-<span class="fc" id="L102">                playerCheck = true;</span>
+        // Continues to ask for number of players until given correct input.
+<span class="fc bfc" id="L100" title="All 2 branches covered.">        while (!playerCheck){</span>
+<span class="fc" id="L101">            System.out.println(&quot;Enter the number of players: &quot;);</span>
+<span class="fc" id="L102">            number = Integer.parseInt(input.next());</span>
+<span class="fc bfc" id="L103" title="All 2 branches covered.">            if (number &gt;=1){</span>
+<span class="fc" id="L104">                playerCheck = true;</span>
             } else {
-<span class="fc" id="L104">                System.out.println(&quot;Invalid player entry!&quot;);</span>
+<span class="fc" id="L106">                System.out.println(&quot;Invalid player entry!&quot;);</span>
             }
         }
-<span class="fc" id="L107">        Player[] players = new Player[number];</span>
+<span class="fc" id="L109">        Player[] players = new Player[number];</span>
 
-<span class="fc bfc" id="L109" title="All 2 branches covered.">        for(int i=0 ; i&lt;number ;i++){</span>
-<span class="fc" id="L110">            players[i] = new Player(&quot;player&quot; + (i+1));</span>
+        // Instantiates the players and stores in an array called players.
+<span class="fc bfc" id="L112" title="All 2 branches covered.">        for(int i=0 ; i&lt;number ;i++){</span>
+<span class="fc" id="L113">            players[i] = new Player(&quot;player&quot; + (i+1));</span>
         }
 
-<span class="fc" id="L113">        boolean fileCheck=false;</span>
-<span class="fc" id="L114">        int check = 11*number;</span>
+<span class="fc" id="L116">        boolean fileCheck=false;</span>
+<span class="fc" id="L117">        int check = 11*number; // Minimum number of pebbles needed in file.</span>
 
-<span class="fc bfc" id="L116" title="All 2 branches covered.">        while (!fileCheck){</span>
+        // Continues to ask for three files until given correct input and that the given file exists.
+<span class="fc bfc" id="L120" title="All 2 branches covered.">        while (!fileCheck){</span>
             try{
-<span class="fc" id="L118">                System.out.println(&quot;Enter File 1: &quot;);</span>
-<span class="fc" id="L119">                X = new MyBag(input.next(), &quot;X&quot;);</span>
-<span class="fc" id="L120">                X.checkMin(check);</span>
+<span class="fc" id="L122">                System.out.println(&quot;Enter File 1: &quot;);</span>
+<span class="fc" id="L123">                X = new MyBag(input.next(), &quot;X&quot;);</span>
+<span class="fc" id="L124">                X.checkMin(check); // Checks that minimum amount of pebbles.</span>
 
-<span class="fc" id="L122">                System.out.println(&quot;Enter File 2: &quot;);</span>
-<span class="fc" id="L123">                Y = new MyBag(input.next(), &quot;Y&quot;);</span>
-<span class="fc" id="L124">                Y.checkMin(check);</span>
+<span class="fc" id="L126">                System.out.println(&quot;Enter File 2: &quot;);</span>
+<span class="fc" id="L127">                Y = new MyBag(input.next(), &quot;Y&quot;);</span>
+<span class="fc" id="L128">                Y.checkMin(check);</span>
 
-<span class="fc" id="L126">                System.out.println(&quot;Enter File 3: &quot;);</span>
-<span class="fc" id="L127">                Z = new MyBag(input.next(), &quot;Z&quot;);</span>
-<span class="fc" id="L128">                Z.checkMin(check);</span>
+<span class="fc" id="L130">                System.out.println(&quot;Enter File 3: &quot;);</span>
+<span class="fc" id="L131">                Z = new MyBag(input.next(), &quot;Z&quot;);</span>
+<span class="fc" id="L132">                Z.checkMin(check);</span>
 
-<span class="fc" id="L130">                fileCheck = true;</span>
-<span class="fc" id="L131">            }catch (IOException e){</span>
-<span class="fc" id="L132">                System.out.println(e);</span>
-<span class="fc" id="L133">            }</span>
+<span class="fc" id="L134">                fileCheck = true;</span>
+<span class="fc" id="L135">            }catch (IOException e){</span>
+<span class="fc" id="L136">                System.out.println(e);</span>
+<span class="fc" id="L137">            }</span>
         }
-<span class="fc" id="L135">        X.setCoBag(A);</span>
-<span class="fc" id="L136">        Y.setCoBag(B);</span>
-<span class="fc" id="L137">        Z.setCoBag(C);</span>
+        
+        // Sets corresponding bags.
+<span class="fc" id="L141">        X.setCoBag(A);</span>
+<span class="fc" id="L142">        Y.setCoBag(B);</span>
+<span class="fc" id="L143">        Z.setCoBag(C);</span>
 
-<span class="fc" id="L139">        A.setCoBag(X);</span>
-<span class="fc" id="L140">        B.setCoBag(Y);</span>
-<span class="fc" id="L141">        C.setCoBag(Z);</span>
+<span class="fc" id="L145">        A.setCoBag(X);</span>
+<span class="fc" id="L146">        B.setCoBag(Y);</span>
+<span class="fc" id="L147">        C.setCoBag(Z);</span>
 
-<span class="fc bfc" id="L143" title="All 2 branches covered.">        for(int i=0 ; i&lt;number ;i++){</span>
-<span class="fc" id="L144">            players[i].start();</span>
+        //Starts player threads.
+<span class="fc bfc" id="L150" title="All 2 branches covered.">        for(int i=0 ; i&lt;number ;i++){</span>
+<span class="fc" id="L151">            players[i].start();</span>
         }
 
-<span class="fc" id="L147">        input.close();</span>
-<span class="fc" id="L148">    }</span>
+<span class="fc" id="L154">        input.close();</span>
+<span class="fc" id="L155">    }</span>
 
+    //Main method uses do work so that it can be tested with inputs.
     public static void main (String args[]){
-<span class="nc" id="L151">        doWork(new Scanner(System.in));</span>
-<span class="nc" id="L152">    }</span>
+<span class="nc" id="L159">        doWork(new Scanner(System.in));</span>
+<span class="nc" id="L160">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.6.201602180812</span></div></body></html>

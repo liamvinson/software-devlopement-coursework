@@ -1,12 +1,92 @@
 player2 has discarded a 19 to A
-player2 hand is [5, 16, 16, 11, 1, 2, 3, 13, 4]
-player2 has drawn a 18 from X
-player2 hand is [5, 16, 16, 11, 1, 2, 3, 13, 4, 18]
-player2 has discarded a 5 to B
-player2 hand is [16, 16, 11, 1, 2, 3, 13, 4, 18]
-player2 has drawn a 20 from Y
-player2 hand is [16, 16, 11, 1, 2, 3, 13, 4, 18, 20]
-player2 has discarded a 16 to A
-player2 hand is [16, 11, 1, 2, 3, 13, 4, 18, 20]
+player2 hand is [10, 6, 14, 1, 5, 17, 4, 10, 15]
 player2 has drawn a 12 from X
-player2 hand is [16, 11, 1, 2, 3, 13, 4, 18, 20, 12]
+player2 hand is [10, 6, 14, 1, 5, 17, 4, 10, 15, 12]
+player2 has discarded a 10 to B
+player2 hand is [6, 14, 1, 5, 17, 4, 10, 15, 12]
+player2 has drawn a 1 from Y
+player2 hand is [6, 14, 1, 5, 17, 4, 10, 15, 12, 1]
+player2 has discarded a 6 to B
+player2 hand is [14, 1, 5, 17, 4, 10, 15, 12, 1]
+player2 has drawn a 14 from Y
+player2 hand is [14, 1, 5, 17, 4, 10, 15, 12, 1, 14]
+player2 has discarded a 14 to C
+player2 hand is [1, 5, 17, 4, 10, 15, 12, 1, 14]
+player2 has drawn a 11 from Z
+player2 hand is [1, 5, 17, 4, 10, 15, 12, 1, 14, 11]
+player2 has discarded a 1 to C
+player2 hand is [5, 17, 4, 10, 15, 12, 1, 14, 11]
+player2 has drawn a 2 from Z
+player2 hand is [5, 17, 4, 10, 15, 12, 1, 14, 11, 2]
+player2 has discarded a 5 to A
+player2 hand is [17, 4, 10, 15, 12, 1, 14, 11, 2]
+player2 has drawn a 6 from X
+player2 hand is [17, 4, 10, 15, 12, 1, 14, 11, 2, 6]
+player2 has discarded a 17 to C
+player2 hand is [4, 10, 15, 12, 1, 14, 11, 2, 6]
+player2 has drawn a 1 from Z
+player2 hand is [4, 10, 15, 12, 1, 14, 11, 2, 6, 1]
+player2 has discarded a 4 to A
+player2 hand is [10, 15, 12, 1, 14, 11, 2, 6, 1]
+player2 has drawn a 7 from X
+player2 hand is [10, 15, 12, 1, 14, 11, 2, 6, 1, 7]
+player2 has discarded a 10 to A
+player2 hand is [15, 12, 1, 14, 11, 2, 6, 1, 7]
+player2 has drawn a 5 from X
+player2 hand is [15, 12, 1, 14, 11, 2, 6, 1, 7, 5]
+player2 has discarded a 15 to A
+player2 hand is [12, 1, 14, 11, 2, 6, 1, 7, 5]
+player2 has drawn a 16 from X
+player2 hand is [12, 1, 14, 11, 2, 6, 1, 7, 5, 16]
+player2 has discarded a 12 to C
+player2 hand is [1, 14, 11, 2, 6, 1, 7, 5, 16]
+player2 has drawn a 20 from Z
+player2 hand is [1, 14, 11, 2, 6, 1, 7, 5, 16, 20]
+player2 has discarded a 1 to A
+player2 hand is [14, 11, 2, 6, 1, 7, 5, 16, 20]
+player2 has drawn a 19 from X
+player2 hand is [14, 11, 2, 6, 1, 7, 5, 16, 20, 19]
+player2 has discarded a 14 to C
+player2 hand is [11, 2, 6, 1, 7, 5, 16, 20, 19]
+player2 has drawn a 7 from Z
+player2 hand is [11, 2, 6, 1, 7, 5, 16, 20, 19, 7]
+player2 has discarded a 11 to C
+player2 hand is [2, 6, 1, 7, 5, 16, 20, 19, 7]
+player2 has drawn a 16 from Z
+player2 hand is [2, 6, 1, 7, 5, 16, 20, 19, 7, 16]
+player2 has discarded a 2 to A
+player2 hand is [6, 1, 7, 5, 16, 20, 19, 7, 16]
+player2 has drawn a 19 from X
+player2 hand is [6, 1, 7, 5, 16, 20, 19, 7, 16, 19]
+player2 has discarded a 6 to C
+player2 hand is [1, 7, 5, 16, 20, 19, 7, 16, 19]
+player2 has drawn a 11 from Z
+player2 hand is [1, 7, 5, 16, 20, 19, 7, 16, 19, 11]
+player2 has discarded a 1 to B
+player2 hand is [7, 5, 16, 20, 19, 7, 16, 19, 11]
+player2 has drawn a 14 from Y
+player2 hand is [7, 5, 16, 20, 19, 7, 16, 19, 11, 14]
+player2 has discarded a 7 to C
+player2 hand is [5, 16, 20, 19, 7, 16, 19, 11, 14]
+player2 has drawn a 9 from Z
+player2 hand is [5, 16, 20, 19, 7, 16, 19, 11, 14, 9]
+player2 has discarded a 5 to B
+player2 hand is [16, 20, 19, 7, 16, 19, 11, 14, 9]
+player2 has drawn a 17 from Y
+player2 hand is [16, 20, 19, 7, 16, 19, 11, 14, 9, 17]
+player2 has discarded a 16 to C
+player2 hand is [20, 19, 7, 16, 19, 11, 14, 9, 17]
+player2 has drawn a 8 from Z
+player2 hand is [20, 19, 7, 16, 19, 11, 14, 9, 17, 8]
+player2 has discarded a 20 to B
+player2 hand is [19, 7, 16, 19, 11, 14, 9, 17, 8]
+player2 has drawn a 9 from Y
+player2 hand is [19, 7, 16, 19, 11, 14, 9, 17, 8, 9]
+player2 has discarded a 19 to B
+player2 hand is [7, 16, 19, 11, 14, 9, 17, 8, 9]
+player2 has drawn a 12 from Y
+player2 hand is [7, 16, 19, 11, 14, 9, 17, 8, 9, 12]
+player2 has discarded a 7 to B
+player2 hand is [16, 19, 11, 14, 9, 17, 8, 9, 12]
+player2 has drawn a 18 from Y
+player2 hand is [16, 19, 11, 14, 9, 17, 8, 9, 12, 18]

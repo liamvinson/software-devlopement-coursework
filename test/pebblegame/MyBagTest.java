@@ -51,7 +51,6 @@ public class MyBagTest {
         String t = "testPebbles2.txt";
         
         MyBag instance = new MyBag(t, "A");
-        ArrayList<Integer> expectedPebbles = new ArrayList<Integer>(Arrays.asList(1,2,3,4,-5,6,7,8,9,10));
     }
 
     /**
@@ -72,10 +71,9 @@ public class MyBagTest {
     @Test
     public void testDraw10() throws Exception {
         System.out.println("draw10");
-        int expResult = 10;
         int result = black.draw10().size();
-        assertEquals(expResult, result);
-        assertEquals(expResult, black.myPebbles.size());
+        assertEquals(10, result);
+        assertEquals(10, black.myPebbles.size());
     }
 
     /**

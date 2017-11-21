@@ -1,16 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pebblegame;
-
-/**
- * Write a description of class MyBag here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 
 import java.util.Random;
 import java.util.Scanner;
@@ -26,24 +14,27 @@ public class MyBag
     MyBag corrospondingBag;
     String bagName;
 
+    //When constructing white bags
     public MyBag(String bagName){
         this.bagName = bagName;
     }
-
+    
+    //When constructing black bags
     public MyBag(String bagFile, String bagName) throws IOException
     {
         readFrom(bagFile);
         this.bagName = bagName;
     }
-
+    
+    //Takes filename and updates myPebbles arraylist, throws IOException if any integers in file are negative
     public void readFrom(String t) throws IOException {
         InputStream in = getClass().getResourceAsStream(t);
         Scanner scanner = new Scanner(in);
+        
+        //Splits the string into a list of ints without commas.
         String line;
         String[] lineVector;
-
         line = scanner.nextLine();
-
         lineVector = line.split(",");
 
         for (String item : lineVector){
@@ -55,10 +46,12 @@ public class MyBag
         }
     }
 
+    //Sets corresponding bag.
     public void setCoBag(MyBag bag){
         corrospondingBag = bag;
     }
 
+    //Returns an arraylist containing 10 integers which are chosen at random and removes them from the bags myPebbles arraylist.
     public ArrayList<Integer> draw10(){
         ArrayList<Integer> pebbles10 = new ArrayList<Integer>();
 
@@ -70,6 +63,7 @@ public class MyBag
         return pebbles10;
     }
 
+    //Returns an integer chosen at random and removes it from the bags myPebbles arraylist.
     public int drawOne(){
         Random random = new Random();
         if (myPebbles.isEmpty()){
@@ -80,12 +74,14 @@ public class MyBag
         return myPebbles.remove(select);
     }
 
+    //Returns arraylist which is equal to myPebbles and then clears myPebbles.
     public ArrayList<Integer> emptyBag() {
         ArrayList<Integer> copy = new ArrayList<Integer>(myPebbles);
         myPebbles.clear();
         return copy;
     }
     
+    //Throws an exception if check is greater than the size of myPebbles.
     public void checkMin(int check) throws IOException{
         if (check > myPebbles.size()){
             throw new IOException("Number of pebbles must be 11 times the number of players!");
